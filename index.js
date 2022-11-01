@@ -22,6 +22,9 @@ mongoose
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("GitHub Repository: https://github.com/Mohammed-Awaad/ecommerce-rest-api.git");
+});
 app.use("/users", userRoute);
 app.use("/sellers", sellerRoute);
 app.use("/products", productRoute);

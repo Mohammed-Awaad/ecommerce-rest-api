@@ -18,6 +18,5 @@ router.get("/seller/:id", verifyTokenAndAuthorization, productControllers.getSpe
 
 // SEARCH
 router.get("/search", userAuth.verifyToken, productControllers.search);
-// router.get("/:name", userAuth.verifyToken, productControllers.searchBySellerName);
 
 module.exports = router;
